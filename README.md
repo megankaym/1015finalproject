@@ -17,23 +17,30 @@ The dataset(s) I have chosen for this project come from AMR-UTI at MIT: http://c
 
 Aim 1: Build random forest classification model
 
+
 Select relevant data for use
 
+
 Combine multiple datasets into 1 using the common (anonymous) ID
+
 
 Split data into training and testing
 
 
 Aim 2: Extract predictions from random forest model
 
+
 Run model to generate predictions on real data
+
 
 Run model to generate predictions on fake (shuffled) data
 
 
 Aim 3: Evaluate predictions
+ 
 
 Model accuracies
+
 
 Use a confusion matrix to determine TP, FP, TN, FN
 
