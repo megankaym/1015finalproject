@@ -15,6 +15,7 @@ Data
 The dataset(s) I have chosen for this project come from AMR-UTI at MIT: http://clinicalml.org/data/amr-dataset/. Request for access to files has been sent. I chose this data because I'm looking to do a project on women's health. I will develop a machine learning model that, based on previous antibiotic exposure and prior infecting organisms, predicts how likely it is for women of ages 18-25 (white or non-white) with no prior procedures to develop resistance. I will use all 3 data files (all_prescriptions.csv, all_uti_resist_labels.csv, all_uti_features.csv).
 
 
+
 Aim 1: Build random forest classification model
 
 
@@ -27,6 +28,7 @@ Combine multiple datasets into 1 using the common (anonymous) ID
 Split data into training and testing
 
 
+
 Aim 2: Extract predictions from random forest model
 
 
@@ -34,6 +36,7 @@ Run model to generate predictions on real data
 
 
 Run model to generate predictions on fake (shuffled) data
+
 
 
 Aim 3: Evaluate predictions
@@ -45,7 +48,9 @@ Model accuracies
 Use a confusion matrix to determine TP, FP, TN, FN
 
 
+
 Results
+
 The model accuracy on the real data was 65.9%, and 69.5% on the shuffled data. 
 
 
