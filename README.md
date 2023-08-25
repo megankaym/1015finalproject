@@ -4,15 +4,20 @@ Urinary tract infections (UTIs) are the most common outpatient infections, with 
 
 Why use machine learning to predict antibiotic resistance based on the present organism? Machine learning is a great tool for personalized medical care. Extracting important information from massive amounts of data saves time and can produce useful insights. Deep learning is a lot of black box stuff, so for clinical data it's better to use simpler models. That way, clinicians with less of a computational background still know what is being done with this medical data. For this project, a random forest classification model was chosen.
 
+
+
 Background
 
 There are different types of UTIs. An uncomplicated UTI is when the kidney is normally functioning, there are no diseases like herpes, gonorrhea, or chlamydia that promote UTIs2, and there are no relevant functional or anatomical abnormalities in the urinary tract1. An acute uncomplicated cystitis is when symptoms only involve the lower urinary tract, whereas an acute uncomplicated pyelonephritis is when symptoms reside in the upper urinary tract. An asymptomatic bacteriuria is a positive urinary culture but an absence of symptoms. A recurrent uncomplicated UTI is the occurrence of 2 or more symptomatic episodes in a 6 month timespan, or 3 or more symptomatic episodes within a 12 month timespan. 
 
 Treatment usually includes general antibiotics, and if symptoms persist a more detailed culture is done to target specific infecting organisms. Ideally, this detailed culture is done first but healthcare professionals seek umbrella treatments, which, when it comes to antibiotics, may cause resistance issues later on. A machine learning model that considers patient history (exposure to antibiotics) to determine if resistance is likely may prove a very helpful tool in addressing UTIs.
 
+
+
 Data
 
 The dataset(s) I have chosen for this project come from AMR-UTI at MIT: http://clinicalml.org/data/amr-dataset/. Request for access to files has been sent. I chose this data because I'm looking to do a project on women's health. I will develop a machine learning model that, based on previous antibiotic exposure and prior infecting organisms, predicts how likely it is for women of ages 18-25 (white or non-white) with no prior procedures to develop resistance. I will use all 3 data files (all_prescriptions.csv, all_uti_resist_labels.csv, all_uti_features.csv).
+
 
 
 
@@ -29,6 +34,7 @@ Split data into training and testing
 
 
 
+
 Aim 2: Extract predictions from random forest model
 
 
@@ -36,6 +42,7 @@ Run model to generate predictions on real data
 
 
 Run model to generate predictions on fake (shuffled) data
+
 
 
 
@@ -55,9 +62,11 @@ Results
 The model accuracy on the real data was 65.9%, and 69.5% on the shuffled data. 
 
 
+
 Future work
 
 This project could be extended by testing different types of models, such as SVM or K-NN. In addition, refining the prediction accuracies for specific resistances could improve accuracy (ie. NIT and NIT CIP resistance both contain NIT resistance, so the model would be partially correct in detecting NIT). Lastly, collecting and using data on other potential confounders such as diet and genetic predisposition could help the model make better predictions.
+
 
 
 References
